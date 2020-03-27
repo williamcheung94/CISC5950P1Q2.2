@@ -3,7 +3,7 @@ name=$1
 #for i in {1..10}
 #do
 #if (($i==1)); then
-../../../start.sh
+./start.sh
 /usr/local/hadoop/bin/hdfs dfs -rm -r /mapreduce-test/project1/NBA/data/NBA1_6/input
 /usr/local/hadoop/bin/hdfs dfs -rm -r /mapreduce-test/project1/NBA/data/NBA1_6/output
 /usr/local/hadoop/bin/hdfs dfs -mkdir -p /project1/NBA/data/NBA1_6/input
@@ -15,6 +15,6 @@ name=$1
 /usr/local/hadoop/bin/hdfs dfs -cat /mapreduce-test/project1/NBA/data/NBA1_6/output/part-00000
 /usr/local/hadoop/bin/hdfs dfs -rm -r /mapreduce-test/project1/NBA/data/NBA1_6/input
 /usr/local/hadoop/bin/hdfs dfs -rm -r /mapreduce-test/project1/NBA/data/NBA1_6/output
-../../../stop.sh
+./stop.sh
 #fi
 #done
